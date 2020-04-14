@@ -105,3 +105,4 @@ dist
 
 # Junk Files
 .DS_Store
+dev_temp/**

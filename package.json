@@ -13,6 +13,7 @@
   "license": "MIT",
   "scripts": {
     "build": "",
+    "build-dev": "./build/dev/yarn version --prerelease",
     "lint": "eslint index.js \"tests/**/*.js\"",
     "test": "jest && yarn run test-typings",
     "test-types": "tsc -p tsconfig.json",
@@ -34,12 +35,19 @@
   },
   "main": "brew-and-view.js",
   "dependencies": {
+    "binary-extract": "^0.1.1",
     "boxen": "^4.2.0",
     "chalk": "^4.0.0",
     "cli-progress": "^3.7.0",
     "convert-source-map": "^1.7.0",
+    "core-js": "^3.6.5",
+    "cpy": "^8.1.0",
+    "filenamify": "^4.1.0",
+    "make-dir": "^3.0.2",
     "node": "^13.12.0",
     "ora": "^4.0.3",
+    "strip-indent": "^3.0.0",
+    "terminal-link": "^2.1.1",
     "update-notifier": "^4.1.0",
     "yargs-parser": "^18.1.2"
   },
@@ -52,7 +60,9 @@
     "figures": "^3.2.0",
     "jest": "^25.3.0",
     "jest-cli": "^25.3.0",
+    "pkg": "^4.4.7",
     "standard": "^14.3.3",
+    "start": "^5.1.0",
     "typescript": "^3.8.3",
     "yarn": "^1.22.4"
   },
