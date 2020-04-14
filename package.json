@@ -1,0 +1,89 @@
+{
+  "name": "brew_and_view",
+  "displayName": "Brew and (a) View",
+  "version": "1.0.1-0",
+  "description": "List all Homebrew packages in a digestible, browsable, humanized format. ",
+  "homepage": "https://github.com/goesclick/brew-and-view",
+  "bugs": {
+    "url": "https://github.com/goesclick/brew-and-view/issues",
+    "email": "patrick@goes.click"
+  },
+  "author": "Patrick Schreiber <patrick@goes.click>",
+  "publisher": "Goes.CLiCK",
+  "license": "MIT",
+  "scripts": {
+    "build": "",
+    "lint": "eslint index.js \"tests/**/*.js\"",
+    "test": "jest && yarn run test-typings",
+    "test-types": "tsc -p tsconfig.json",
+    "jeer": "./"
+  },
+  "man": [
+    "./docs/man/doc.1"
+  ],
+  "private": true,
+  "dist": {},
+  "directories": {
+    "bin": "./bin",
+    "doc": "./doc",
+    "lisb": "./src",
+    "man": "./docs.man"
+  },
+  "bin": {
+    "bnv": "./build/brew_and_view.js"
+  },
+  "main": "brew-and-view.js",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.0.0",
+    "cli-progress": "^3.7.0",
+    "convert-source-map": "^1.7.0",
+    "node": "^13.12.0",
+    "ora": "^4.0.3",
+    "update-notifier": "^4.1.0",
+    "yargs-parser": "^18.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.1",
+    "bin-wrapper": "^4.1.0",
+    "consolemock": "^1.1.0",
+    "docusaurus": "^1.14.4",
+    "figures": "^3.2.0",
+    "jest": "^25.3.0",
+    "jest-cli": "^25.3.0",
+    "standard": "^14.3.3",
+    "typescript": "^3.8.3",
+    "yarn": "^1.22.4"
+  },
+  "contributors": [
+    "Patrick Schreiber <patrick@goes.click> (https://patschreiber.com)"
+  ],
+  "maintainers": [
+    "Patrick Schreiber <patrick@goes.click> (https://patschreiber.com)"
+  ],
+  "keywords": [
+    "homebrew",
+    "packages",
+    "list",
+    "info",
+    "cli",
+    "terminal",
+    "command-line",
+    "console",
+    "command",
+    "package",
+    "manager",
+    "helper",
+    "brew",
+    "view",
+    "styles",
+    "styling",
+    "text",
+    "brew and view",
+    "plugin",
+    "add-on",
+    "expansion",
+    "pack"
+  ]
+}
